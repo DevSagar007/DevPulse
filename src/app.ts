@@ -18,6 +18,9 @@ app.post('/', async (req, res) => {
     console.log(req.body);
 })
 
+// Auth route 
+app.use("/api/auth", authRouter)
+
 export default app;
 
 
