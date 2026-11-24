@@ -1,5 +1,6 @@
 import express, { type Request, type Response } from "express";
 import cors from "cors";
+import authRouter from "./modules/auth/auth.router";
 const app = express();
 
 // Middleware

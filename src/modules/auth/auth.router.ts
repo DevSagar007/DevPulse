@@ -1,5 +1,9 @@
 import { Router } from "express";
+import { signUp, updateUser } from "./auth.controller";
 
-const router = Router()
-// create user
-router.put("/:id",authController.updateUser)
+const router = Router();
+
+router.post("/signup", signUp);
+router.put("/:id", updateUser);
+
+export default router;
